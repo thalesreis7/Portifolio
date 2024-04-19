@@ -7,12 +7,12 @@ export const Center = css`
 `
 export const Hover = css`
     :hover{
-        color: #2d609e;
+        color:  #F1742B;
     }
 `
 export const Header = styled.header`
     /* border: solid 1px red; */
-    background-color: #111111;
+    background-color: #D6DEEA;
     height: 9vh;
     ${Center}
 `
@@ -29,7 +29,7 @@ export const BoxH1= styled.div`
     width: 20%;
     /* ${Center} */
     font-size: 0.8rem;
-    color: #F9F9F9;
+    color: #000;
     cursor: pointer;
     ${Hover}
 
@@ -49,9 +49,14 @@ export const Ul = styled.ul`
     li{
         list-style: none;
         font-size: 1rem;
-        font-weight: 500;
-        color: #8A8A8A;
+        font-weight: bold;
+        color: #000;
         cursor: pointer;
-        
+    }
+    a{
+        text-decoration:none;
+        font-weight: bold;
+        color: #000;
+        ${Hover}
     }
 `
