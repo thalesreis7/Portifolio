@@ -7,11 +7,8 @@ export const Center = css`
 `
 export const BoxCard = styled.div`
     border: solid 1px blue;
-    /* width: 80%; */
-    ${Center}
-    img{
-        border: solid 1px green;
-        width: 80%;
-        /* ${Center} */
-    }
+    width: 200px;
+    background-color: white;
+    height: 200px;
+
 `

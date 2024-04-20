@@ -6,7 +6,7 @@ export const Center = css`
     align-items: center;
 `
 export const Main = styled.main`
-    /* border: solid 1px red; */
+    border: solid 4px black;
     height: 160vh;
     background-color: #B9C8DD;
     ${Center}
@@ -137,5 +137,8 @@ export const BoxSkills = styled.div`
     width: 80%;
     height: 20vh;
     ${Center}
-
 `   
+export const BoxProjetos = styled.div`
+    border: solid 2px orange;
+    width: 100%;
+`

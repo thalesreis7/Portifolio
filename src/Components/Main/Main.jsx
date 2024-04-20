@@ -7,7 +7,9 @@ import { FaHtml5 } from 'react-icons/fa6'
 import { FaCss3Alt } from 'react-icons/fa'
 import { RiJavascriptLine } from 'react-icons/ri'
 import { TbBrandNextjs, TbBrandVite } from 'react-icons/tb'
-import Aos from 'aos'
+import Projetos from '../Pages/Projetos/Projetos'
+import * as P from "../Styles/projetos_styled"
+
 
 export default function Main() {
   return (
@@ -58,7 +60,9 @@ export default function Main() {
               <TbBrandVite size={50} style={{color:'orange'}}/>
             </S.BoxSkills>
       </S.SectionThree>
-     
+      <S.BoxProjetos>
+        <Projetos/>
+      </S.BoxProjetos>
     </S.Main>
   )
 }
