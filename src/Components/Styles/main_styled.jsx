@@ -1,51 +1,56 @@
 import styled, { css } from "styled-components";
 
+
 export const Center = css`
     display: flex;
     justify-content: center;
     align-items: center;
 `
 export const Main = styled.main`
-    border: solid 4px black;
-    height: 160vh;
-    background-color: #B9C8DD;
+    /* border: solid 4px black; */
+    height: 190vh;
+    background-color: #0d1821;
     ${Center}
     flex-direction: column;
-    /* align-items: start; */
-    /* justify-content: space-evenly; */
+    justify-content: space-between;
     flex-wrap: wrap;
 `
 export const Section = styled.section`
     /* border: solid 1px green; */
-    background-color: #B9C8DD;
+    background-color: #0d1821;
     width: 100%;
-    height: 47vh;
+    height: 30%;
     ${Center}
     justify-content: space-around;
-    /* align-items: ; */
+    align-items: center;
     
 `
 export const BoxOne = styled.div`
-    /* background-color: #a6b3c5; */
-    /* border-radius: 10px 3px 10px 3px; */
+    /* border: solid 1px red; */
+    background-color: #a6b3c5;
+    border-radius: 10px 2px 10px 2px;
+    border: solid 2px #333;
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
     width: 30vw;
-    height: 70%;
+    height: 40%;
     ${Center}
     flex-direction: column;
     justify-content: start;
-    align-items: start;
+    align-items: center;
     gap: 0.3rem;
     h1{
         /* border: solid 1px red; */
         width: 20vw;
-        height: 40%;
+        height: 70%;
         font-size: 2.5rem;
-        color: #000;
+        color: #d7263d;
     }
     p{  
         /* border: solid 1px red; */
+        padding-left: 0.5rem;
+        width: 70%;
         font-size: 1.2rem;
-        color: #F1742B;
+        color: #0d1821;
     }
 `
 export const BoxTwo = styled.figure`
@@ -68,33 +73,34 @@ export const BoxTwo = styled.figure`
         /* border:solid 1px red; */
         width: 30vw;
         ${Center}
-        color: #F1742B;
+        color: #fcfcfc;
     }
 `
 export const SectionTwo = styled.section`
-    /* border: solid 1px #535353; */
-    background-color: #1160BC;
-    margin-top: 0.2rem;
-    border-top: solid 1px white;
+    /* border: solid 4px #bb0a0a; */
+    background-color: #d7263eb2;
+    background-image: linear-gradient( to right, #c5253aaf, #d14a5c6c, #d7263eb2, #0d1821); 
     width: 100%;
-    height: 40%;
+    height: 35%;
     ${Center}
     flex-direction: column;
-    /* justify-content: space-evenly; */
-  
+    justify-content: space-evenly;
 `
 export const BoxSobre = styled.div`
-    border: solid 1px white;
+    /* border: solid 1px #0d1821; */
     border-radius: 10px;
-    background-color: #B9C8DD;
+    background-color: #a6b3c5;
+    border: solid 2px #333;
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
     width: 79vw;
     height: 50%;
     ${Center}
     flex-direction: column;
     h2{
         /* border: solid 1px red; */
+        align-items: end;
         font-size: 1.8rem;
-        color: #F1742B;
+        color: #D7263D;
     }
     p{
         /* border: solid 1px red; */
@@ -103,42 +109,83 @@ export const BoxSobre = styled.div`
         text-align: justify;
         ${Center};
         font-size: 1.5rem;
-        color: #000;
+        color: #0d1821;
     }
 `
 export const BoxIcons = styled.div`
     /* border: solid 1px purple; */
     width:20vw;
-    height: 15vh;
+    height: 15%;
     ${Center}
     justify-content: space-around;
+    :hover{
+        background-color: #A6B3C5;
+    }
     div{
-        border: solid 1px white;
+        box-shadow: -3px 4px 0 #888, -5px 7px 0 #0d1821;
         ${Center}
-        background-color: #B9C8DD;
-        border-radius: 20px;
-        width: 20%;
+        background-color: #0d1821;
+        border-radius: 10px;
+        width: 30%;
         height: 8vh;
+        :hover{
+            transition: 300ms linear;
+            transform: scale(1.1);
+        }
     }
 `
 export const SectionThree = styled.section`
-    /* border: solid 1px red; */
-    background-color: #1161bc transparent 50%;
-
+    /* border: solid 1px white; */
+    background-color: #d7263eb2;
+    background-image: linear-gradient( to left, #c5253aaf, #d14a5c6c, #d7263eb2, #0d1821); 
     width: 100%;
-    height: 40vh;
+    height: 20%;
     ${Center}
     flex-direction: column;
     font-size: 1.5rem;
-    color: #F1742B;
+    color: #0d1821;
 `
+
 export const BoxSkills = styled.div`
     /* border: solid 1px blue; */
-    width: 80%;
-    height: 20vh;
+    background-color: #a6b3c5;
+    border: solid 2px #333;
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+    border-radius: 10px;
+    width: 40%;
+    height: 70%;
     ${Center}
+    justify-content: space-evenly;
 `   
-export const BoxProjetos = styled.div`
-    border: solid 2px orange;
-    width: 100%;
-`
+export const Skills = styled.div`
+    /* border: solid green; */
+    width: 40%;
+    ${Center}
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height:90%;
+    /* position: absolute; */
+    :hover{
+         transition: 300ms linear;
+         transform: scale(1.1);
+         background-color: #bfbfc0;
+         border: none;
+        }
+    figure{
+        /* border: solid 1px red; */
+        width: 26%;
+        height: 35%;
+        ${Center}
+        background-color: #0d1821;
+        border: solid 2px #333;
+        box-shadow: -3px 4px 0 #888, -5px 7px 0 #000;
+        border-radius: 20px;
+    }
+    img{
+        width: 50%;
+        border-radius: 20px
+        /* ${Center} */
+    }
+`   
+

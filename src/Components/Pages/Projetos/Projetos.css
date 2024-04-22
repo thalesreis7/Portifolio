@@ -1,0 +1,135 @@
+.sectionProjetos {
+    /* border: solid red; */
+    height: 85vh;
+    background-color: #0D1821;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .carrossel {
+    width: 100%;
+    margin: 0 auto;
+    /* height: 500px; */
+    display: flex;
+    /* align-items: center;
+    text-align: center;
+    flex-wrap: wrap; */
+  }
+  .sectionProjetos img {
+    width: 100%;
+  }
+
+  .BoxProjetosTitle{
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 7vh;
+  }
+  
+  .TitleProjetos{
+    font-size: 1.8rem;
+    color: #D7263D;
+  }
+  .boxProjetos {
+    border: solid 1px #fcfcfc;
+    border: solid 2px #333;
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #d7263eb2;
+    padding: 18px 15px;
+    max-width: 300px;
+    height: 450px;
+    max-height: 300px;
+    margin: 15px 50px;
+    color: #fff;
+    transition: 0.3s ease;
+  }
+
+  .image{
+    border-radius: 5px 5px 0px 0px;
+    border: solid 1px #fcfcfc;
+    border-bottom: none;
+  }
+
+  .title{
+    /* border: solid 1px red; */
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.2rem;
+    font-weight: 300;
+    cursor: pointer;
+  }
+
+  .title:hover{
+    color: #00BBF0;
+  }
+
+  .BoxDescricao{
+    /* border: solid 1px blue; */
+    height: 27%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .descricao{
+    /* border: solid 1px red; */
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D1821;
+    border-radius: 10px;
+    width: 23%;
+    height: 50%; 
+  }
+
+  .descricao:hover{
+    color: #D7263D;
+    background-color: #A6B3C5;
+    transition: 300ms linear;
+    transform: scale(1.1);
+  }
+  
+  .Link{
+    /* border: solid red; */
+    border-radius: 7px;
+    background-color: #A6B3C5;
+    display: flex;
+    justify-content: center;
+    height: 8%;
+    width: 43%;
+    text-decoration: none;
+    color:#0D1821;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .Link:hover{
+    color:#9A2135;
+    background-color: #0D1821;
+    transition: 300ms linear;
+    transform: scale(1.1);
+    
+  }
+  
+  .slick-slider .slick-list {
+    /* border: solid black; */
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+  @media (max-width: 768px) {
+    .slick-slider .slick-list {
+      border: solid black;
+      width: 100%;
+      margin: 20px auto;
+    }
+  }
+  

@@ -3,12 +3,13 @@ import * as S from '../Styles/main_styled'
 import { CiLinkedin } from 'react-icons/ci'
 import { MdOutlineMail } from 'react-icons/md'
 import { SlSocialGithub } from 'react-icons/sl'
-import { FaHtml5 } from 'react-icons/fa6'
-import { FaCss3Alt } from 'react-icons/fa'
-import { RiJavascriptLine } from 'react-icons/ri'
-import { TbBrandNextjs, TbBrandVite } from 'react-icons/tb'
-import Projetos from '../Pages/Projetos/Projetos'
-import * as P from "../Styles/projetos_styled"
+import html from "../../assets/img/icones/html.png"
+import css from "../../assets/img/icones/css.png"
+import javascript from "../../assets/img/icones/javascript.svg"
+import next from "../../assets/img/icones/next-js.svg"
+import reactjs from "../../assets/img/icones/reactjs.png"
+import stylee from "../../assets/img/icones/styled-components.svg"
+import vite from "../../assets/img/icones/vite-js-logo.svg"
 
 
 export default function Main() {
@@ -35,34 +36,51 @@ export default function Main() {
         <S.BoxIcons>
             <div>
               <a href="mailto:thalesreis.praia@gmail.com" target="_blank"  rel="noopener nooreferrer">
-                <MdOutlineMail size={40} style={{color:'#F1742B'}}/>
+                <MdOutlineMail size={40} style={{color:'#d7263d'}}/>
               </a>
             </div>
            <div>
               <a href="https://www.github.com/thalesreis7" target="_blank" rel="noopener nooreferrer"> 
-                  <SlSocialGithub size={35} style={{color:'#F1742B'}}/>
+                  <SlSocialGithub size={35} style={{color:'#d7263d'}}/>
                 </a>
            </div>
             <div>
               <a href="https://www.linkedin.com/in/thales-reis-furtado" target="_blank" rel="noopner nooreferrer">
-                <CiLinkedin size={40} style={{color:'#F1742B'}}/>
+                <CiLinkedin size={40} style={{color:'#d7263d'}}/>
               </a> 
             </div>
           </S.BoxIcons>
       </S.SectionTwo>
       <S.SectionThree>
-              <h3>Skills</h3>
+             <h3 id='skills'>Skills</h3>
             <S.BoxSkills>
-              <FaHtml5  size={50} style={{color:'orange'}}/>
-              <FaCss3Alt size={50} style={{color:'orange'}}/>
-              <RiJavascriptLine size={50} style={{color:'orange'}}/>
-              <TbBrandNextjs size={50} style={{color:'orange'}}/>
-              <TbBrandVite size={50} style={{color:'orange'}}/>
+                <S.Skills>
+                    <figure>
+                      <img src={html} alt="" />
+                    </figure>
+                    <figure>
+                      <img src={css} alt="" />
+                    </figure>
+                    <figure>
+                      <img src={javascript} alt="" />
+                    </figure>
+                    <figure>
+                      <img src={next} alt="" />
+                    </figure>
+                </S.Skills>
+                <S.Skills>
+                    <figure>
+                      <img src={reactjs} alt="" />
+                    </figure>
+                    <figure>
+                      <img src={stylee} alt="" />
+                    </figure>
+                    <figure>
+                      <img src={vite} alt="" />
+                    </figure>
+                </S.Skills>
             </S.BoxSkills>
       </S.SectionThree>
-      <S.BoxProjetos>
-        <Projetos/>
-      </S.BoxProjetos>
     </S.Main>
   )
 }

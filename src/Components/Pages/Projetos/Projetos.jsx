@@ -1,32 +1,78 @@
 import "slick-carousel/slick/slick.css";
 import { ListaProjetos } from "./Cards";
-import * as S from "../../Styles/projetos_styled";
-import Slider from "react-slick";
+import { Carousel } from "antd" 
+import "./Projetos.css"
 
 export default function Projetos() {
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 2000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 2000,
-  };
-
   return (
     <>
-
-        <Slider {...settings} className="Carousel">
+      <section className="sectionProjetos">
+        <div className="BoxProjetosTitle">
+          <h3 className="TitleProjetos" id='project'>Projetos</h3>
+        </div>
+        <Carousel
+          slidesToShow={3}
+          autoplay={true}
+          pauseOnHover={true}
+          speed={4000}
+          dots={false}
+          className="carrossel"
+          responsive={[
+            {
+              breakpoint: 2600,
+              settings: {
+                slidesToShow: 5,
+              },
+            },
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 1400,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ]}
+        >
           {ListaProjetos.map((data, index) => (
-            <S.BoxCard key={index}>
-              {/* <img src={data.imagem} alt="" /> */}
-              <h3>{data.titlo}</h3>
-              <p>{data.descricao}</p>
-            </S.BoxCard>
+            <div key={index} className="boxProjetos">
+              <img src={data.imagem} alt=""  className="image"/>
+              <h3 className="title">{data.titulo}</h3>
+            <div className="BoxDescricao">
+              <p className="descricao">{data.tech1}</p>
+              <p className="descricao">{data.tech2}</p>
+              <p className="descricao">{data.tech3}</p>
+              <p className="descricao">{data.tech4}</p>
+            </div>
+              <a href={data.url} target="_blank" rel="noopener noreferrer" className="Link">
+                Link do projeto
+              </a>
+            </div>
           ))}
-        </Slider>
-      </>
+        </Carousel>
+      </section>
+    </>
   )
 }

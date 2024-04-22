@@ -6,5 +6,8 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Archivo', sans-serif;
+        body{
+            background-color: #0D1821;
+        }
     }
 `

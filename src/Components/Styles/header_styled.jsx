@@ -7,12 +7,13 @@ export const Center = css`
 `
 export const Hover = css`
     :hover{
-        color:  #F1742B;
+        color:  #A6B3C5;
     }
 `
 export const Header = styled.header`
     /* border: solid 1px red; */
-    background-color: #D6DEEA;
+    border-bottom: solid  1px #fcfcfc;
+    background-color: #0D1821;
     height: 9vh;
     ${Center}
 `
@@ -26,12 +27,16 @@ export const BoxPrincipal = styled.div`
 
 export const BoxH1= styled.div`
     /* border: solid 1px green;  */
-    width: 20%;
-    /* ${Center} */
+    width: 12%;
+    ${Center}
+    justify-content: space-between;
     font-size: 0.8rem;
-    color: #000;
+    color: #d7263d;
     cursor: pointer;
     ${Hover}
+    img{
+        width: 28%;
+    }
 
 `
 
@@ -46,17 +51,11 @@ export const Ul = styled.ul`
     ${Center}
     justify-content: space-between;
     ${Hover}
-    li{
-        list-style: none;
-        font-size: 1rem;
-        font-weight: bold;
-        color: #000;
-        cursor: pointer;
-    }
     a{
         text-decoration:none;
         font-weight: bold;
-        color: #000;
+        color: #d7263d;
         ${Hover}
+        cursor: pointer;
     }
 `
