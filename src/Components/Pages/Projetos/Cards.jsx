@@ -17,7 +17,7 @@ export const ListaProjetos = [
     {
         titulo: 'Hortfruti',
         imagem: hort,
-        tech: ["HTML", "CSS", "JavaScript"],
+        tech: [ "ReactJS","HTML", "CSS", "JavaScript"],
         descricao:'Projeto com o foco na utilidade de Props.',
         url:'https://site-hortifruti.vercel.app',
     },
@@ -46,15 +46,14 @@ export const ListaProjetos = [
         titulo: 'Selfcare',
         imagem: care,
         tech: ["HTML", "CSS", "JavaScript"],
-        descricao:'Projeto realizado utilizando Flexbox com layout flexível e elementos responsivos',
+        descricao:'Projeto realizado utilizando Flexbox com layout flexível e elementos responsivos.',
         url:'https://selfcare-seven.vercel.app',
     },
     {
         titulo: 'Residencial',
         imagem: residencial,
         tech: ["HTML", "CSS", "JavaScript"],
-        descricao:'Projeto feito para aperfeiçoar minhas habilidades atravé do layout da comunidade Codelândia',
+        descricao:'Projeto feito para aperfeiçoar minhas habilidades atravé do layout da comunidade Codelândia.',
         url:'https://site-residencial.vercel.app',
-    }
-
+    },
 ]

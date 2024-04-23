@@ -14,12 +14,8 @@ export default function Projetos() {
 
   return (
     <>
-      <section className="sectionProjetos" 
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom">
-          <div className="BoxProjetosTitle" 
-            data-aos="fade-up"
-            data-aos-anchor-placement="bottom-bottom">
+      <section className="sectionProjetos" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div className="BoxProjetosTitle" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
             <h3 className="TitleProjetos" id='project'>Projetos</h3>
           </div>
           <Carousel 
@@ -69,10 +65,8 @@ export default function Projetos() {
           ]}
           >
           {ListaProjetos.map((data, index) => (
-            <div key={index} className="boxProjetos"  
-             data-aos="fade-up"
-             data-aos-anchor-placement="top-center">
-              <img src={data.imagem} alt=""  className="image"/>
+            <div key={index} className="boxProjetos" data-aos="fade-up" data-aos-anchor-placement="top-center">
+              <img src={data.imagem} alt="imagem do projeto"  className="image"/>
               <h3 className="title">{data.titulo}</h3>
               <div className="BoxDescricao">
                 <p className="descricao">{data.descricao}</p>

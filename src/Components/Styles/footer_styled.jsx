@@ -5,6 +5,10 @@ export const Center = css`
     justify-content: center;
     align-items: center;
 `
+export const FontColor = css`
+     font-weight: 200;
+     color: #fcfcfc;
+`
 export const Footer = styled.footer`
     /* border: solid 1px green; */
     height: 9vh;
@@ -13,13 +17,11 @@ export const Footer = styled.footer`
     justify-content: space-evenly;
     background-color: #0D1821;
     border-top: solid 1px #fcfcfc;
-    
 `
 export const BoxCop = styled.div`
     /* border: solid 1px red; */
     p{
-        color: #fcfcfc;
-        font-weight: 200;
+        ${FontColor}
     }
     span{
         color: #9A2135;
@@ -29,8 +31,7 @@ export const BoxCop = styled.div`
 export const BoxCop2 = styled.div`
     /* border: solid 1px red; */
     p{
-        font-weight: 200;
-        color: #fcfcfc;
+        ${FontColor}
     }
     span{
         font-weight:200;

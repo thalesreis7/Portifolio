@@ -1,15 +1,19 @@
 import styled, { css } from "styled-components";
 
-
-
 export const Center = css`
     display: flex;
     justify-content: center;
     align-items: center;
 `
+
+export const Border = css`
+    border: solid 2px #333;
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+    border-radius: 10px 2px 10px 2px;
+`
 export const Main = styled.main`
     /* border: solid 4px black; */
-    height: 190vh;
+    height: 210vh;
     background-color: #0d1821;
     ${Center}
     flex-direction: column;
@@ -24,14 +28,11 @@ export const Section = styled.section`
     ${Center}
     justify-content: space-around;
     align-items: center;
-    
 `
 export const BoxOne = styled.div`
     /* border: solid 1px red; */
     background-color: #a6b3c5;
-    border-radius: 10px 2px 10px 2px;
-    border: solid 2px #333;
-    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+    ${Border}
     width: 30vw;
     height: 40%;
     ${Center}
@@ -63,15 +64,15 @@ export const BoxTwo = styled.figure`
     align-items: center;
     justify-content: space-between;
     gap:0.1rem;
-    width:18%;
-    height:75%;   
-    border: solid 2px #d7263eb2;
-    box-shadow: -3px 4px 0 #888, -5px 7px 0 #000;
-    border-radius: 100px;
+    width:20%;
+    height:50%;
+    ${Border}   
+    position: relative;
+    top: 4%; 
     img{
         width:100%;
         height:100%;
-        border-radius: 100px;
+        border-radius: 10px 2px 10px 2px;
     }
     figcaption{
         /* border:solid 1px red; */
@@ -86,19 +87,17 @@ export const SectionTwo = styled.section`
     background-color: #d7263eb2;
     background-image: linear-gradient( to right, #c5253aaf, #d14a5c6c, #d7263eb2, #0d1821); 
     width: 100%;
-    height: 35%;
+    height: 30%;
     overflow-x: hidden;
     ${Center}
     flex-direction: column;
     justify-content: space-evenly;
-    /* overflow-y : hidden; */
 `
 export const BoxSobre = styled.div`
     /* border: solid 1px #0d1821; */
+    ${Border}
     border-radius: 10px;
     background-color: #a6b3c5;
-    border: solid 2px #333;
-    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
     width: 80%;
     height: 50%;
     ${Center}
@@ -156,8 +155,7 @@ export const SectionThree = styled.section`
 export const BoxSkills = styled.div`
     /* border: solid 1px blue; */
     background-color: #a6b3c5;
-    border: solid 2px #333;
-    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+    ${Border}
     border-radius: 10px;
     width: 40%;
     height: 70%;
@@ -165,7 +163,7 @@ export const BoxSkills = styled.div`
     justify-content: space-evenly;
 `   
 export const Skills = styled.div`
-    /* border: solid green; */
+    /* border: solid green;  */
     width: 40%;
     ${Center}
     align-items: start;
@@ -181,12 +179,11 @@ export const Skills = styled.div`
         }
     figure{
         /* border: solid 1px red; */
-        width: 26%;
+        width: 28%;
         height: 35%;
         ${Center}
         background-color: #0d1821;
-        border: solid 2px #333;
-        box-shadow: -3px 4px 0 #888, -5px 7px 0 #000;
+        ${Border}
         border-radius: 20px;
     }
     img{
@@ -195,4 +192,3 @@ export const Skills = styled.div`
         /* ${Center} */
     }
 `   
-
