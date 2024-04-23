@@ -1,5 +1,6 @@
 import React from 'react'
 import * as S from "../Styles/footer_styled"
+
 export default function Footer() {
   return (
     <S.Footer>

@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 
+
 export const Center = css`
     display: flex;
     justify-content: center;
@@ -59,32 +60,38 @@ export const BoxTwo = styled.figure`
     height: 70%;
     ${Center}
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     justify-content: space-between;
     gap:0.1rem;
+    width:18%;
+    height:75%;   
+    border: solid 2px #d7263eb2;
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #000;
+    border-radius: 100px;
     img{
-        /* border: solid 1px green; */
-        background-color: #2320bd;
-        /* width:99%;
-        height:90%; */
-        border-radius: 70px;
+        width:100%;
+        height:100%;
+        border-radius: 100px;
     }
     figcaption{
         /* border:solid 1px red; */
         width: 30vw;
+        padding-top: 1rem;
         ${Center}
         color: #fcfcfc;
     }
 `
 export const SectionTwo = styled.section`
-    /* border: solid 4px #bb0a0a; */
+    /* border: solid 4px #5d0abb; */
     background-color: #d7263eb2;
     background-image: linear-gradient( to right, #c5253aaf, #d14a5c6c, #d7263eb2, #0d1821); 
     width: 100%;
     height: 35%;
+    overflow-x: hidden;
     ${Center}
     flex-direction: column;
     justify-content: space-evenly;
+    /* overflow-y : hidden; */
 `
 export const BoxSobre = styled.div`
     /* border: solid 1px #0d1821; */
@@ -92,7 +99,7 @@ export const BoxSobre = styled.div`
     background-color: #a6b3c5;
     border: solid 2px #333;
     box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
-    width: 79vw;
+    width: 80%;
     height: 50%;
     ${Center}
     flex-direction: column;
@@ -104,8 +111,8 @@ export const BoxSobre = styled.div`
     }
     p{
         /* border: solid 1px red; */
-        width: 69vw;
-        height: 20vh;
+        width: 87%;
+        height: 57%;
         text-align: justify;
         ${Center};
         font-size: 1.5rem;
@@ -114,7 +121,7 @@ export const BoxSobre = styled.div`
 `
 export const BoxIcons = styled.div`
     /* border: solid 1px purple; */
-    width:20vw;
+    width:20%;
     height: 15%;
     ${Center}
     justify-content: space-around;
@@ -128,7 +135,7 @@ export const BoxIcons = styled.div`
         border-radius: 10px;
         width: 30%;
         height: 8vh;
-        :hover{
+        &:hover{
             transition: 300ms linear;
             transform: scale(1.1);
         }
@@ -167,7 +174,7 @@ export const Skills = styled.div`
     height:90%;
     /* position: absolute; */
     :hover{
-         transition: 300ms linear;
+         transition: 100ms linear;
          transform: scale(1.1);
          background-color: #bfbfc0;
          border: none;
