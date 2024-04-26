@@ -34,6 +34,7 @@ export const Section = styled.section`
     ${Center}
     justify-content: space-around;
     align-items: center;
+<<<<<<< HEAD
     @media (max-width: 412px) {
         border: solid green;
         width: 92%;
@@ -41,6 +42,8 @@ export const Section = styled.section`
         align-items: flex-start;
         justify-content: space-between;
     }
+=======
+>>>>>>> 379ae3a561e6b17526268702cc4a3f752183399a
 `
 export const BoxOne = styled.div`
     /* border: solid 1px red; */
@@ -95,6 +98,7 @@ export const BoxTwo = styled.figure`
     align-items: center;
     justify-content: space-between;
     gap:0.1rem;
+<<<<<<< HEAD
     width:15%;
     height:60%;
     ${Border}   
@@ -105,6 +109,13 @@ export const BoxTwo = styled.figure`
         width: 40%;
         height: 76%;
     }
+=======
+    width:20%;
+    height:50%;
+    ${Border}   
+    position: relative;
+    top: 4%; 
+>>>>>>> 379ae3a561e6b17526268702cc4a3f752183399a
     img{
         width:100%;
         height:100%;
@@ -138,6 +149,7 @@ export const SectionTwo = styled.section`
     ${Center}
     flex-direction: column;
     justify-content: space-evenly;
+<<<<<<< HEAD
     @media (max-width: 412px) {
         border: solid purple;
         height: 40%;    
@@ -145,6 +157,11 @@ export const SectionTwo = styled.section`
 `
 export const BoxSobre = styled.div`
     border: solid 1px #0d1821;
+=======
+`
+export const BoxSobre = styled.div`
+    /* border: solid 1px #0d1821; */
+>>>>>>> 379ae3a561e6b17526268702cc4a3f752183399a
     ${Border}
     border-radius: 10px;
     background-color: #a6b3c5;

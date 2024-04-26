@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Center = css`
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,12 +10,23 @@ export const ColorCursor = css`
   color: #d7263d;
   cursor: pointer;
 `;
+=======
+    display:flex;
+    justify-content: center;
+    align-items: center;
+`
+export const ColorCursor = css`
+    color: #d7263d;
+    cursor: pointer;
+`
+>>>>>>> 379ae3a561e6b17526268702cc4a3f752183399a
 export const Hover = css`
   :hover {
     color: #a6b3c5;
   }
 `;
 export const Header = styled.header`
+<<<<<<< HEAD
   /* border: solid 1px red; */
   border-bottom: solid 1px #fcfcfc;
   background-color: #0d1821dd;
@@ -65,6 +77,45 @@ export const BoxH1 = styled.div`
     }
   }
 `;
+=======
+    /* border: solid 1px red; */
+    border-bottom: solid  1px #fcfcfc;
+    background-color: #0d1821dd;
+    height: 9vh;
+    ${Center}
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    backdrop-filter: blur(3px);
+
+    @media (max-width: 884px){
+        border: solid green;
+    }
+`
+export const BoxPrincipal = styled.div`
+    /* border:solid 1px blue; */
+    width: 79%;
+    ${Center}
+    justify-content: space-between;
+`
+export const BoxH1= styled.div`
+    /* border: solid 1px green;  */
+    width: 10.7%;
+    height: 8vh;
+    ${Center}
+    justify-content: space-between;
+    /* align-items: end; */
+    font-size: 1.4rem;
+    font-weight: bold;
+    ${ColorCursor}
+    ${Hover}
+    img{
+        width: 25%;
+        position: relative;
+        bottom: 7%;
+    }
+`
+>>>>>>> 379ae3a561e6b17526268702cc4a3f752183399a
 export const Nav = styled.nav`
   /* border:solid 1px orange; */
   width: 40%;
@@ -85,10 +136,19 @@ export const Ul = styled.ul`
     font-weight: bold;
     font-size: 1rem;
     ${Hover}
+<<<<<<< HEAD
     ${ColorCursor}
     @media (max-width: 412px) {
       font-size: 0.9rem;
       
+=======
+    a{
+        text-decoration:none;
+        font-weight: bold;
+        font-size: 1rem;
+        ${Hover}
+        ${ColorCursor}
+>>>>>>> 379ae3a561e6b17526268702cc4a3f752183399a
     }
     @media (max-width: 360px) {
       font-size: 0.7rem;
