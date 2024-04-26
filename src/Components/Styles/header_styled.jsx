@@ -26,7 +26,6 @@ export const Header = styled.header`
   backdrop-filter: blur(3px);
   @media (max-width: 412px) {
     height: 15vh;
-    
   }
 `;
 export const BoxPrincipal = styled.div`
