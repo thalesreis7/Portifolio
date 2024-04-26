@@ -34,16 +34,13 @@ export const Section = styled.section`
     ${Center}
     justify-content: space-around;
     align-items: center;
-<<<<<<< HEAD
     @media (max-width: 412px) {
-        border: solid green;
+        /* border: solid green; */
         width: 92%;
         height: 18%;
         align-items: flex-start;
         justify-content: space-between;
     }
-=======
->>>>>>> 379ae3a561e6b17526268702cc4a3f752183399a
 `
 export const BoxOne = styled.div`
     /* border: solid 1px red; */
@@ -98,24 +95,19 @@ export const BoxTwo = styled.figure`
     align-items: center;
     justify-content: space-between;
     gap:0.1rem;
-<<<<<<< HEAD
+    ${Border}   
+    position: relative;
+    top: 4%; 
     width:15%;
-    height:60%;
+    height:70%;
     ${Border}   
     position: relative;
     top: 4%; 
     @media (max-width: 412px) {
         /* border: solid aqua; */
         width: 40%;
-        height: 76%;
+        height: 66%;
     }
-=======
-    width:20%;
-    height:50%;
-    ${Border}   
-    position: relative;
-    top: 4%; 
->>>>>>> 379ae3a561e6b17526268702cc4a3f752183399a
     img{
         width:100%;
         height:100%;
@@ -149,19 +141,13 @@ export const SectionTwo = styled.section`
     ${Center}
     flex-direction: column;
     justify-content: space-evenly;
-<<<<<<< HEAD
     @media (max-width: 412px) {
-        border: solid purple;
-        height: 40%;    
+        /* border: solid purple; */
+        height: 30%;    
     }
 `
 export const BoxSobre = styled.div`
     border: solid 1px #0d1821;
-=======
-`
-export const BoxSobre = styled.div`
-    /* border: solid 1px #0d1821; */
->>>>>>> 379ae3a561e6b17526268702cc4a3f752183399a
     ${Border}
     border-radius: 10px;
     background-color: #a6b3c5;
@@ -170,7 +156,7 @@ export const BoxSobre = styled.div`
     ${Center}
     flex-direction: column;
     @media (max-width: 412px) {
-        border: solid red;
+        /* border: solid red; */
         width: 90%;
         height: 57%;
         justify-content: space-evenly;
@@ -181,8 +167,8 @@ export const BoxSobre = styled.div`
         font-size: 1.8rem;
         color: #D7263D;
         @media (max-width: 412px) {
-            border: solid red;
-            
+            /* border: solid red; */
+            font-size: 2rem;
         }
     }
     p{
@@ -194,13 +180,11 @@ export const BoxSobre = styled.div`
         font-size: 1.5rem;
         color: #0d1821;
         @media (max-width: 412px) {
-            border: solid red;
+            /* border: solid red; */
             font-size: 100%;
             width: 90%;
-            height: 50%;
+            height: 55%;
             text-align: justify;
-            /* letter-spacing: 5px; */
-
         }
     }
 `
@@ -212,6 +196,10 @@ export const BoxIcons = styled.div`
     justify-content: space-around;
     :hover{
         background-color: #A6B3C5;
+    }
+    @media (max-width: 412px) {
+        /* border: solid 1px purple; */
+        width: 75%;
     }
     div{
         box-shadow: -3px 4px 0 #888, -5px 7px 0 #0d1821;
@@ -247,6 +235,9 @@ export const BoxSkills = styled.div`
     height: 70%;
     ${Center}
     justify-content: space-evenly;
+    @media (max-width: 412px) {
+        width: 85%;
+    }
 `   
 export const Skills = styled.div`
     /* border: solid green;  */
@@ -256,7 +247,6 @@ export const Skills = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     height:90%;
-    /* position: absolute; */
     :hover{
          transition: 100ms linear;
          transform: scale(1.1);
@@ -271,6 +261,9 @@ export const Skills = styled.div`
         background-color: #0d1821;
         ${Border}
         border-radius: 20px;
+    @media (max-width: 412px) {
+        width: 45%;
+    }
     }
     img{
         width: 50%;

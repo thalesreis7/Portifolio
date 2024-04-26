@@ -16,11 +16,7 @@ export default function Header() {
         </S.BoxH1>
           <S.Nav>
               <S.Ul data-aos="zoom-in">
-<<<<<<< HEAD
                 <Link to="about" spy={true} smooth={true} offset={-199} duration={80} >Sobre min</Link>
-=======
-                <Link to="about" spy={true} smooth={true} offset={-199} duration={500} >Sobre min</Link>
->>>>>>> 379ae3a561e6b17526268702cc4a3f752183399a
                 <Link to="skills" spy={true} smooth={true} offset={-300} duration={500}>Minhas Skills</Link>
                 <Link to="project" spy={true} smooth={true} offset={-200} duration={500}>Projetos</Link>
                 {/* <a>Contato</a> */}
@@ -30,8 +26,8 @@ export default function Header() {
               <button onClick={()=> setMenu(!menu)}>{menu ? "X" : "☰"}</button>
               {menu &&(
                 <S.UlMenu>
-                  <Link to="about" spy={true} smooth={true} offset={-600} duration={500}>Início</Link>
-                  <Link to="about" spy={true} smooth={true} offset={-199} duration={500} >Sobre min</Link>
+                  <Link to="about" spy={true} smooth={true} offset={-700} duration={500}>Início</Link>
+                  <Link to="about" spy={true} smooth={true} offset={-135} duration={80} >Sobre min</Link>
                   <Link to="skills" spy={true} smooth={true} offset={-300} duration={500}>Minhas Skills</Link>
                   <Link to="project" spy={true} smooth={true} offset={-200} duration={500}>Projetos</Link>
                 </S.UlMenu>
