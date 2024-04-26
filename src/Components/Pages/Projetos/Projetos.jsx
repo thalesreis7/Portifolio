@@ -1,4 +1,3 @@
-import "slick-carousel/slick/slick.css";
 import { ListaProjetos } from "./Cards";
 import { Carousel } from "antd" 
 import "./Projetos.css"
