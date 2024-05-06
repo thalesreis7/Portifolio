@@ -25,6 +25,10 @@ export const Main = styled.main`
         height: 198vh;
         /* justify-content: center; */
     }
+    /* @media (max-width:320px) {
+        border: solid black;
+        height:298vh;
+    } */
 `
 export const Section = styled.section`
     /* border: solid 1px green; */
@@ -34,12 +38,61 @@ export const Section = styled.section`
     ${Center}
     justify-content: space-around;
     align-items: center;
+    button{
+        width: 10%;
+        height: 13%;
+        background-color: #D7263D;
+        ${Border}
+        border-radius: 10px;
+        font-weight: bold;
+        color: #a6b3c5;
+        position: relative;
+        right:45%;
+        top: 38%;
+        cursor: pointer;
+        &:hover{
+            transition: 300ms linear;
+            transform: scale(1.1);
+            background-color: #0d1821;
+            color: #D7263D;
+        }
+        &:active{
+            font-size: 0.7rem;
+        }
+        @media (max-width: 412px){
+            position: relative;
+            right: 35%;
+            top: 57%;
+            width: 37%;
+        }
+        @media (max-width:375px) {
+            /* border: solid red; */
+            width: 77%;
+            height: 18%;
+            position: relative;
+            right: 36%;
+        }
+        @media (max-width:360px) {
+            position: relative;
+            top: 65%;
+        }
+        @media (max-width:320px){
+            height: 22%;
+            position: relative;
+            top: 80%;
+            right: 33%;
+        }
+    }
     @media (max-width: 412px) {
         /* border: solid green; */
         width: 92%;
         height: 18%;
         align-items: flex-start;
         justify-content: space-between;
+    }
+    @media (max-width: 320px) {
+        /* border: solid green; */
+        width: 94%;
     }
 `
 export const BoxOne = styled.div`
@@ -55,11 +108,23 @@ export const BoxOne = styled.div`
     gap: 0.3rem;
     @media (max-width:412px) {
         /* border: solid purple; */
-        width: 38%;
-        height: 40%;
+        width: 43%;
+        height: 44%;
         justify-content: space-evenly;
         position: relative;
         top: 5%;
+    }
+    @media (max-width:375px) {
+        /* border: solid purple; */
+        width: 100%;
+    }
+    @media (max-width:360px) {
+        width: 100%;
+        height: 52%;
+    }
+    @media (max-width:320px){
+        width: 100%;
+        height: 69%;
     }
     h1{
         /* border: solid 1px red; */
@@ -106,7 +171,10 @@ export const BoxTwo = styled.figure`
     @media (max-width: 412px) {
         /* border: solid aqua; */
         width: 40%;
-        height: 66%;
+        height: 53%;
+    }
+    @media (max-width: 320px){
+        height: 70%;
     }
     img{
         width:100%;
@@ -121,9 +189,10 @@ export const BoxTwo = styled.figure`
         color: #fcfcfc;
         @media (max-width: 412px){
             /* border: solid red; */
-            width: 140%;
-            height: 30%;
+            width: 133%;
+            height: 44%;
             /* padding-top:1rem; */
+            text-align: right;
             font-size: 1rem;
             font-weight: 400;
             position:relative;
@@ -186,6 +255,9 @@ export const BoxSobre = styled.div`
             height: 55%;
             text-align: justify;
         }
+        @media (max-width:320px){
+            font-size: 75%;
+        }
     }
 `
 export const BoxIcons = styled.div`
@@ -224,6 +296,10 @@ export const SectionThree = styled.section`
     flex-direction: column;
     font-size: 1.5rem;
     color: #0d1821;
+    @media (max-width:320px) {
+        /* border:solid black; */
+        margin-bottom: 20%;
+    }
 `
 
 export const BoxSkills = styled.div`

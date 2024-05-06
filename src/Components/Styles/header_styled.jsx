@@ -30,7 +30,7 @@ export const Header = styled.header`
 `;
 export const BoxPrincipal = styled.div`
   /* border:solid 1px blue; */
-  width: 79%;
+  width: 86%;
   ${Center}
   justify-content: space-between;
   @media (max-width: 412px) {
@@ -40,7 +40,7 @@ export const BoxPrincipal = styled.div`
   }
 `;
 export const BoxH1 = styled.div`
-  /* border: solid 1px green;  */
+  /* border: solid 1px green;*/
   width: 10.7%;
   height: 8vh;
   ${Center}
@@ -118,6 +118,9 @@ export const BoxMenu = styled.div`
       border-radius: 10px;
       position: relative;
       top: 4%;
+      @media (max-width:320px) {
+          height: 12%;
+      }
       &:hover {
         transition: 300ms linear;
         transform: scale(1.1);

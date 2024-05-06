@@ -9,17 +9,21 @@ import next from "../../assets/img/icones/next-js.svg";
 import reactjs from "../../assets/img/icones/reactjs.png";
 import stylee from "../../assets/img/icones/styled-components.svg";
 import vite from "../../assets/img/icones/vite-js-logo.svg";
-import avatar from "../../assets/img/icones/avatar.jpg";
+import curriculo from "../../assets/img/curriculo/CV_Thalesreisfurtado.pdf"
 import foto from "../../assets/img/icones/perfil.jpeg";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export default function Main() {
+  
+  const downloadCurriculo = () =>{
+    window.open(curriculo, "_blank");
+  }
   useEffect(() => {
     AOS.init({ duration: "1000" });
   });
+
 
   return (
     <S.Main>
@@ -28,6 +32,7 @@ export default function Main() {
           <h1>Olá, eu sou o Thales Reis ;)</h1>
           <p>Front-End Web Developer</p>
         </S.BoxOne>
+          <button data-aos="fade-left" data-aos-offset="200" data-aos-duration="5000" onClick={downloadCurriculo}>Download CV &#8659;</button>
         <S.BoxTwo data-aos="zoom-out-left">
           <img src={foto} alt="Foto de perfil" />
           <figcaption>
