@@ -12,7 +12,7 @@ export const ListaProjetos = [
         imagem: blog,
         tech: ["ReactJS", "HTML", "CSS", "JavaScript"],
         descricao:'Projeto feito com intuito de aprimorar habilidades em ReactJS.',
-        url:'https://github.com/thalesreis7/Desafio-Codelandia-39',
+        url:'https://blogames-xi.vercel.app',
     },
     {
         titulo: 'Hortfruti',
@@ -40,7 +40,7 @@ export const ListaProjetos = [
         imagem: rick,
         tech: ["ReactJS", "HTML", "CSS", "JavaScript"],
         descricao:'Projeto com proposta de consumir uma API e fazer buscas utilizando map e filter.',
-        url:'https://github.com/thalesreis7/-Rick-And-Morty-Universe',
+        url:'https://rick-and-morty-universe-brown.vercel.app',
     },
     {
         titulo: 'Selfcare',
