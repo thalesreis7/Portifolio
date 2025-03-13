@@ -9,7 +9,7 @@ import next from "../../assets/img/icones/next-js.svg";
 import reactjs from "../../assets/img/icones/reactjs.png";
 import stylee from "../../assets/img/icones/styled-components.svg";
 import vite from "../../assets/img/icones/vite-js-logo.svg";
-import curriculo from "../../assets/img/curriculo/CV_Thalesreisfurtado.pdf"
+import curriculo from "../../assets/img/curriculo/CV_Thalesreisfurtado.pdf.pdf"
 import foto from "../../assets/img/icones/perfil.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
